@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.card {
+    background-color: #ffffff; /* White card background */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    overflow: hidden; /* For any potential overflowing elements */
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(45deg, #a8dadc, #457b9d); /* Subtle gradient border effect */
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(8px); /* Blurry effect for the border */
+    opacity: 0.7;
+}
+
+
+.header h1 {
+    font-family: 'Pacifico', cursive; /* A script font for a celebratory feel */
+    color: #1d3557; /* Dark blue */
+    font-size: 3.2em;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #457b9d; /* Medium blue */
+    margin-bottom: 15px;
+}
+
+.message p:first-of-type {
+    margin-top: 25px;
+}
+
+.message .signature {
+    font-weight: bold;
+    color: #1d3557;
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #e63946; /* Red heart color */
+    font-weight: bold;
+}
